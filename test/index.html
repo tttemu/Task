@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
+    <header class="menu open">
+        <div class="menu header__container">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <p class="logo_mobile">Бренд</p>
+            <a href="#" class="btn btn-primary header-btn-mobile openModal"><img src="./icon1.png"></a>
+            <nav class="header">
+                <a class="logo_header" href="index.html">Бренд</a>
+                <ul class="text_header">
+                    <li><a class="header_link_mobile" href="#">Меню</a></li>
+                    <li><a class="header_link_visited" href="index.html">Главная</a></li>
+                    <li><a class="header_link" href="#catalog">Каталог</a></li>
+                    <li><a class="header_link" href="#catalog">Цены</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary header-btn openModal"><img src="./icon1.png">Заказать звонок</a>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <video autoplay muted loop class="banner-video">
+            <source src="./video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="container">
+            <h1 class="banner_text">Купить <span>товар</span> с доставкой</h1>
+            <p class="banner_text">Официальный поставщик <span>товаров</span> в Стране!</p>
+            <div class="banner_button">
+            <a href="#" class="btn btn-primary banner-btn openModal">Заказать звонок</a>
+            <p>Ваши данные <br>
+                под надежной защитой</p>
+            </div>
+        </div>
+    </div>
+    <section class="catalog">
+        <a name="catalog"></a>
+        <div class="inside_catalog">
+            <h2 class="text_catalog">Каталог</h2>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-xl-3">
+                    <div class="card border-light mb-3" style="max-width: 30rem">
+                        <img src="./image.webp" alt="Товар 2" width="234" height="216" class="picture">
+                            <div class="card-body">
+                            <h3 class="card-title">Товар 1</h3>
+                            <p class="card-text">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            <ul>
+                                <li>An item</li>
+                                <li>A secong item</li>
+                                <li>A third item</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-primary card-btn">Купить</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-xl-3">
+                    <div class="card border-light mb-3" style="max-width: 30rem">
+                        <img src="./image.webp" alt="Товар 2" width="234" height="216" class="picture">
+                        <div class="card-body">
+                            <h3 class="card-title">Товар 2</h3>
+                        </div>
+                        <a href="#" class="btn btn-primary card-btn">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-title">
+            <h5>Modal title</h5>
+            <span class="close">&times;</span>
+        </div>
+        <hr>
+            <p>...</p>
+        <hr>
+        <div class="modal_buttons">
+        <a href="#" class="btn btn-primary modal-btn-close">Close</a>
+        <a href="#" class="btn btn-primary modal-btn">Save changes</a>
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
